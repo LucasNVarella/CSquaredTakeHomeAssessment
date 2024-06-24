@@ -1,0 +1,76 @@
+@import "react-datepicker/dist/react-datepicker";
+
+.center {
+    text-align: center;
+}
+
+.dayBubble {
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+.dayBubble:hover {
+    border-radius: 15px;
+}
+
+.bubbleToday {
+    @extend .dayBubble;
+    background-color: gray;
+}
+
+.bubbleToday:hover {
+    @extend .dayBubble;
+    background-color: lightgray;
+}
+
+.bubblePastDay {
+    @extend .dayBubble;
+    background-color: transparent;
+    color: lightgray;
+}
+
+.bubblePastDay:hover {
+    @extend .dayBubble;
+    background-color: transparent;
+    color: lightgray;
+}
+
+.bubbleSelected {
+    @extend .dayBubble;
+    background-color: limegreen;
+}
+
+.bubbleSelected:hover {
+    @extend .dayBubble;
+    background-color: lightgreen;
+}
+
+.bubbleNotSelected {
+    @extend .dayBubble;
+    background-color: transparent;
+    color: black;
+}
+
+.bubbleNotSelected:hover {
+    @extend .dayBubble;
+    background-color: lightgray;
+}
+
+.bubbleDisabledDay {
+    @extend .dayBubble;
+    background-color: transparent;
+    color: transparent;
+}
+
+.bubbleDisabledDay:hover {
+    @extend .dayBubble;
+    background-color: transparent;
+    color: transparent;
+    cursor: default;
+}
+
+.bubbleDisabledDay::selection {
+    @extend .dayBubble;
+    color: transparent;
+    cursor: default;
+}
